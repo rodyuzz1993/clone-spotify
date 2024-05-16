@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Spotify</title>
+    <link rel="icon" type="image/png" href="img/spotify.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="BGNegro CGris">
+<nav id="Izq">
+    <article id="Home">
+        <a href="https://open.spotify.com/intl-es"> 
+            <img alt="Home" src="img/home.png">
+            <span class="CGristexto">Inicio</span>
+        </a>
+        <a href="https://open.spotify.com/intl-es"> 
+            <img alt="Buscar" src="img/lupa.png">
+            <span class="CGristexto">Buscar</span>
+        </a>
+    </article>
+    <article id="TuBiblio">
+        <div id="Biblio">
+            <a href="#" class="CGristexto">
+                <img alt="Biblioteca" src="img/biblioteca.png">
+                <span>Tu biblioteca</span>
+            </a>
+            <div>
+                <a href="#">
+                    <img alt="+" src="img/mas.png">
+                </a>
+                <a href="#">
+                    <img alt="=>" src="img/flecha-correcta.png">
+                </a>
+            </div>
+        </div>
+        <div id="Categorias">
+            <div class="btns">
+                <button class="BGTransparente">
+                    Listas 
+                </button>
+                <button class="BGTransparente">
+                    Artistas
+                </button>
+                <button class="BGTransparente">
+                    Pódcast y programas
+                </button>
+            </div>
+            <div id="BtnCategorias">
+                <button class="BtnIzq">
+                    <img alt="Izquierda" src="img/flecha-izquierda.png">
+                </button>
+                <button class="BtnDer">
+                    <img alt="derecha" src="img/flecha-derecha.png">
+                </button>
+            </div>
+
+        </div>
+        <div id="FiltroArtistas">
+            <div id="Filtro">
+                <button id="search">
+                    <img alt="Buscador" src="img/lupa.png">
+                </button>
+                <a href="">
+                    <span>Recientes</span>
+                    <img alt="Lista" src="img/lista.png">
+                </a>
+            </div>
+            <ul id="Artistas">
+                <li class="CancionesGustan">
+                    <div class="gustan">
+                        <img alt="Gustan" src="img/corazon.png">
+                    </div>
+                    <div>
+                        <p>
+                            Canciones que te gustan
+                        </p>
+                        <span>
+                            <img alt="Pin" src="img/pin.png">
+                            <span>
+                                Lista • 181 canciones
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li class="Episodios">
+                    <div class="guardados">
+                        <img alt="Episodios" src="img/guardar.png">
+                    </div>
+                    <div>
+                        <p>
+                            Tus Episodios
+                        </p>
+                        <span>
+                            <img alt="Pin" src="img/pin.png">
+                            <span>
+                                Episodios guardados y descargados
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li class="Lista">
+                    <img alt="Maroon 5" src="img/maroon5Un.jpg">
+                    <div>
+                        <p class="active">
+                            Maroon 5- Unplugged
+                        </p>
+                        <span>
+                            <span>
+                                Lista • mcflystudio
+                            </span>
+                        </span>
+                    </div>
+                    <img alt="Sonido" id="BocinaArtista" src="img/musica.png">
+                </li>
+                <li class="Artista">
+                    <img alt="Arpi Alto" src="img/arpi-alto.jpg">
+                    <div>
+                        <p>
+                            Arpi Alto
+                        </p>
+                        <span>
+                            <span>
+                                Artista
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li class="Lista">
+                    <img alt="Luis Miguel" src="img/LMR.jpg">
+                    <div>
+                        <p>
+                            Luis Miguel: Ranchero
+                        </p>
+                        <span>
+                            <span>
+                                Lista • spotify
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li class="Artista">
+                    <img alt="Lucas Imbiriba" src="img/LI.jpg">
+                    <div>
+                        <p>
+                            Lucas Imbiriba
+                        </p>
+                        <span>
+                            <span>
+                                Artista
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li class="Artista">
+                    <img alt="Soda Stereo" src="img/SS.jpg">
+                    <div>
+                        <p>
+                            Soda Stereo
+                        </p>
+                        <span>
+                            <span>
+                                Artista
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li class="Artista">
+                    <img alt="Maroon 5" src="img/M5.jpg">
+                    <div>
+                        <p>
+                            Maroon 5
+                        </p>
+                        <span>
+                            <span>
+                                Artista
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li class="Artista">
+                    <img alt="Led Zeppelin" src="img/LZ.jpg">
+                    <div>
+                        <p>
+                            Led Zeppelin
+                        </p>
+                        <span>
+                            <span>
+                                Artista
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li class="Artista">
+                    <img alt="Armin van Buuren" src="img/AVB.jpg">
+                    <div>
+                        <p>
+                            Armin van Buuren
+                        </p>
+                    <span>
+                        <span>
+                            Artista
+                        </span>
+                    </span>
+                    </div>
+                </li>
+                <li class="Artista">
+                    <img alt="Avicii" src="img/AVI.jpg">
+                    <div>
+                        <p>
+                            Avicii
+                        </p>
+                    <span>
+                        <span>
+                            Artista
+                        </span>
+                    </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+</nav>
+<section id="Centro">
+    <article class="top">
+        <article class="BtnHeader">
+            <button class="BtnIzqHeader">
+                ❮
+            </button>
+            <button class="BtnDerHeader">
+                ❯
+            </button>
+        </article>
+        <article>
+            <button class="Descubrir">
+                Descubrir Premium
+            </button>
+            <button class="InsApp">
+                <img alt="Down" src="img/flecha-down.png">
+                <span>Instalar app</span>
+            </button> 
+            <button class="Campana">
+                <img alt="Campana" src="img/campana.png">
+            </button>
+            <button class="Perfil">
+                <img alt="Usuario" src="img/perfil.jpg">
+            </button>
+        </article>
+    </article>
+    <article id="MixArtistas">
+        <div>
+            <img alt="Maroon 5" src="img/maroon5Un.jpg">
+            <p>Maroon 5 - Unplugged</p>
+            <span>
+                <img alt="Sonido" src="img/sonido.png">
+                <button id="stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+                <button id="play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+            </span>
+        </div>
+        <div class="gustan">
+            <div>
+                <img alt="Gustan" src="img/corazon.png">
+            </div>
+            <p>Canciones que te gustan</p>
+            <span>
+                <img alt="Sonido" src="img/sonido.png">
+                <button id="stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+                <button id="play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+            </span>
+        </div>
+        <div>
+            <img alt="Tri" src="img/MixTri.jpg">
+            <p>Mix de El Tri</p>
+            <span>
+                <img alt="Sonido" src="img/sonido.png">
+                <button id="stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+                <button id="play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+            </span>
+        </div>
+        <div>
+            <img alt="America" src="img/MixAmerica.jpg">
+            <p>Mix de America</p>
+            <span>
+                <img alt="Sonido" src="img/sonido.png">
+                <button id="stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+                <button id="play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+            </span>
+        </div>
+        <div>
+            <img alt="Shakira" src="img/MixShakira.jpg">
+            <p>Mix de Shakira</p>
+            <span>
+                <img alt="Sonido" src="img/sonido.png">
+                <button id="stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+                <button id="play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+            </span>
+        </div>
+        <div>
+            <img alt="America's Hits" src="img/AmericaHits.jpg">
+            <p>America's Greatest Hits - History</p>
+            <span>
+                <img alt="Sonido" src="img/sonido.png">
+                <button id="stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+                <button id="play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+            </span>
+        </div>
+        <div>
+            <img alt="Soft Rock" src="img/softRock.jpg">
+            <p>Soft Rock</p>
+            <span>
+                <img alt="Sonido" src="img/sonido.png">
+                <button id="stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+                <button id="play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+            </span>
+        </div>
+        <div>
+            <img alt="Just Try to Forget These Songs" src="img/JusTry.jpg">
+            <p>Just Try to Forget These Songs</p>
+            <span>
+                <img alt="Sonido" src="img/sonido.png">
+                <button id="stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+                <button id="play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+            </span>
+        </div>
+    </article>
+    <article class="Recomendaciones">
+        <div class="Titulo">
+            <h2><strong>Sumérgete de nuevo en tu música</strong></h2>
+            <p>Mostrar todo</p>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="Elefante" src="img/MixElefante.jpg">
+                <p>Mix de Elefante</p>
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>Mix de Elefante</p>
+                <span>
+                    <a href="">Los Enanitos Verdes</a>,
+                    <a href="">Café Tacvba</a> y 
+                    <a href="">Moenia</a>
+                </span>
+            </div>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="Enanitos Verdes" src="img/MixEnanitos.jpg">
+                <p>Mix de Los Enanitos Verdes</p>
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>Mix de Los Enanitos Verdes</p>
+                <span>
+                    <a href="">Café Tacvba</a>,
+                    <a href="">Duncan</a>,
+                    <a href="">Dhu</a> y 
+                    <a href="">Caifanes</a>
+                </span>
+            </div>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="Romántico" src="img/MixShakira.jpg">
+                <p>Mix Romántico</p>
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>Mix Romántico</p>
+                <span>
+                    <a href="">Shakira</a>,
+                    <a href="">Café Tacvba</a>,
+                    <a href="">Elefante</a> y 
+                    <a href="">más</a>
+                </span>
+            </div>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="Walking in the city" src="img/walking.webp">
+                <p></p>
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>Walking in the city at night</p>
+                <span>
+                    <a href="">De Sophia</a>
+                </span>
+            </div>
+        </div>
+    </article>
+    <article class="Recomendaciones">
+        <div class="Titulo">
+            <h2><strong>Escuchado Recientemente </strong></h2>
+            <p>Mostrar todo</p>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="Maroon 5" src="img/maroon5Un.jpg">
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>Maroon 5 - Unplugged</p>
+                <span>
+                    <a href="">Live and acoustic versions of some songs</a>
+                </span>
+            </div>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="Passenger" src="img/passenger.jpg">
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>Let Her Go</p>
+                <span>
+                    <a href="">Passenger</a>
+                </span>
+            </div>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="America's Greatest Hits - History" src="img/AmericaHits.jpg">
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>America's Greatest Hits - History</p>
+                <span>
+                    <a href="">America</a>
+                </span>
+            </div>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix PlayGustar">
+                <img alt="Canciones que te gustan" class="gustar" src="img/corazon.png">
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>Canciones que te gustan</p>
+                <span>
+                    <a href="">182 canciones</a>
+                </span>
+            </div>
+        </div>
+    </article>
+    <article class="Recomendaciones">
+        <div class="Titulo">
+            <h2><strong>Nostalgia </strong></h2>
+            <p>Mostrar todo</p>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="Rock Classics" src="img/rock.jpg">
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>Rock Classics</p>
+                <span>
+                    <a href="">Rock legends & epic songs that continue to playing</a>
+                </span>
+            </div>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="All Out 80s" src="img/80s.webp">
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>All Out 80s</p>
+                <span>
+                    <a href="">The biggest songs of the 1980s. Cover: Michael Jackson</a>
+                </span>
+            </div>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="00s Rock Anthems" src="img/00s.jpg">
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>00s Rock Anthems</p>
+                <span>
+                    <a href="">These songs rocked the 00s. Cover: Muse</a>
+                </span>
+            </div>
+        </div>
+        <div class="mixes">
+            <div class="ImgMix">
+                <img alt="Los 90 México" src="img/90s.jpg">
+                <button id="Play">
+                    <img alt="Play" src="img/play.png">
+                </button>
+                <button id="Stop">
+                    <img alt="Stop" src="img/stop.png">
+                </button>
+            </div>
+            <div class="TxtMix">
+                <p>Los 90 México</p>
+                <span>
+                    <a href="">¡Nuestros amados 90 los recordamos así!</a>
+                </span>
+            </div>
+        </div>
+    </article>
+    <article class="MenuFoot">
+        <div class="top">
+            <ul class="Menu">
+                <li><strong><a href="">Empresa</a></strong></li>
+                <li><a href="">Acerda de</a></li>
+                <li><a href="">Empleo</a></li>
+                <li><a href="">For the Record</a></li>
+            </ul>
+            <ul class="Menu">
+                <li><strong><a href="">Comunidades</a></strong></li>
+                <li><a href="">Para artistas</a></li>
+                <li><a href="">Desarrolladores</a></li>
+                <li><a href="">Publicidad</a></li>
+                <li><a href="">Inversores</a></li>
+                <li><a href="">Proveedores</a></li>
+            </ul>
+            <ul class="Menu">
+                <li><strong><a href="">Enlaces útiles</a></strong></li>
+                <li><a href="">Asistencia</a></li>
+                <li><a href="">App gratis para móvil</a></li>
+            </ul>
+            <ul class="Menu">
+                <li><strong><a href="">Planes de spotify</a></strong></li>
+                <li><a href="">Premium Individual</a></li>
+                <li><a href="">Premium Duo</a></li>
+                <li><a href="">Premium Familiar</a></li>
+                <li><a href="">Premium para Estudiantes</a></li>
+                <li><a href="">Spotify Free</a></li>
+            </ul>
+            <ul class="SocialMedia">
+                <li class="Instagram">
+                    <a href=""><img alt="Instagram" src="/img/instagram.png"></a>
+                </li>
+                <li class="XTwitter">
+                    <a href=""><img alt="Twitter" src="/img/twitter.png"></a>
+                </li>
+                <li class="Facebook">
+                    <a href=""><img alt="Facebook" src="/img/facebook.png"></a>
+                </li>
+            </ul>    
+        </div>
+        <hr>
+        <div class="bottom">
+            <ul class="Politicas">
+                <li><a href="">Legal</a></li>
+                <li><a href="">Centro de seguridad y privacidad</a></li>
+                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">Información sobre los anuncios</a></li>
+                <li><a href="">Accesibilidad</a></li>
+            </ul>
+            <p>
+                © 2024 Spotify AB
+            </p>
+        </div>
+    </article>
+</section>
+<section id="Der">
+    <article class="principal">
+        <div class="top">
+            <h1>
+                Maroon 5 - Unplugged
+            </h1>
+            <button id="MasOpciones">...</button>
+            <button id="close">x</button>
+        </div>
+        <img alt="Album" src="img/Maroon5Acoustic.jpg" class="Album">
+        <div class="ArtistaSidebar">
+            <span>
+                <h2>
+                    She Will Be Loved
+                </h2>
+                <a>
+                    Maroon 5
+                </a>                
+            </span>
+            <span>
+                <button id="MeGusta">
+                    +
+                </button>
+            </span>
+        </div>
+    </article>
+    <article class="InfArtista">
+        <img alt="Artista" src="img/Maroon5Info.jpg">
+        <p>Maroon 5</p>
+        <div class="oyentes">
+            63.134.311 oyentes mensuales
+        </div>
+        <button>
+            Dejar de seguir
+        </button>
+        <div id="PopInfo">
+            Maroon 5 -- and, specifically, its frontman <a>Adam Levine</a> -- became the face of blue-eyed soul in the 
+            21st century, managing to navigate shifting trends in music and fashion to be one of the biggest pop bands of their generation.  
+        </div>
+    </article>
+    <article class="creditos">
+        <span><h3>Créditos</h3><span>Mostrar todos</span></span>
+        <div class="ArtPrin DejarSeguir">
+            <div>
+                <h3>Maroon 5</h3>
+                <span>Artista</span>
+                <span>Principal</span>
+            </div>
+            <button>
+                Dejar de seguir
+            </button>
+        </div>
+        <div class="ArtPrin">
+            <h3>Adam Levine</h3>
+            <span>Composición</span>
+        </div>
+        <div class="ArtPrin">
+            <h3>James Valentine</h3>
+            <span>Composición</span>
+        </div>
+    </article>
+    <article class="gira">
+        <span><h3>Créditos</h3><span>Mostrar todos</span></span>
+        <div class="presentacion">
+            <span class="fecha">
+                <h4>May</h4>
+                <h3>17</h3>
+            </span>
+            <span class="horario">
+                <h3>Las Vegas</h3>
+                <h4>Maroon 5</h4>
+                <p>vie, 20:00 • Dolby Live, Las Vegas, NV, US</p>
+            </span>
+        </div>
+        <div class="presentacion">
+            <span class="fecha">
+                <h4>May</h4>
+                <h3>18</h3>
+            </span>
+            <span class="horario">
+                <h3>Las Vegas</h3>
+                <h4>Maroon 5</h4>
+                <p>sáb, 20:00 • Dolby Live, Las Vegas, NV, US</p>
+            </span>
+        </div>
+    </article>
+    <article class="continuacion">
+        <span><h3>A continuación</h3><span>Abrir cola</span></span>
+        <div class="SongNext">
+            <span>
+                <img alt="play" src="img/play.png">
+                <img alt="nota musical" src="img/notamusical.png">
+            </span>
+            <img alt="Maroon5" src="img/Maroon5Acoustic.jpg">
+            <span>
+                <h3>Sunday Morning</h3>
+                <h4>Maroon 5</h4>
+            </span>
+        </div>        
+    </article>
+</section>
+<footer>
+    <section class="SongArtista">
+        <img alt="Maroon 5" src="img/Maroon5Acoustic.jpg">
+        <span>
+            <a>She Will Be Loved - Acoustic</a>
+            <a>Maroon 5</a>
+        </span>
+        <span class="Plus">
+            +
+        </span>
+    </section>
+    <section id="Reproductor">
+        <article class="botones">
+            <button id="aleatorio">
+                <img alt="aleatorio" src="img/aleatorio.png">
+            </button>
+            <button id="regresar">
+                <img alt="regresar" src="img/anterior.png">
+            </button>
+            <button id="reproducir">
+                <img alt="reproducir" src="img/play.png">
+            </button>
+            <button id="parar">
+                <img alt="parar" src="img/stop.png">
+            </button>
+            <button id="adelantar">
+                <img alt="adelantar" src="img/siguiente.png">
+            </button>
+            <button id="repetir">
+                <p>1</p>
+                <img alt="repetir" src="img/repetir.png">
+                <span>•</span>
+            </button>
+        </article>
+        <article id="barra">
+            <output class="music-output" for="music">0:01</output>
+            <input
+            type="range"
+            name="music"
+            id="music"
+            min="0"
+            max="4:36"
+            step="0:01"
+            value="0:01" />
+            <output class="music-output" for="music">4:36</output>
+        </article>
+    </section>
+    <section id="VistaExtra">
+        <button id="VistaSonando">
+            <img alt="Vista sonando" src="img/sonando.png">
+            <span>•</span>
+        </button>
+        <button id="Letra">
+            <img alt="Letra" src="img/microfono.png">
+            <span>•</span>
+        </button>
+        <button id="Cola">
+            <img alt="Cola" src="img/cola.png">
+            <span>•</span>
+        </button>
+        <button id="Conectar">
+            <img alt="Conectar" src="img/conectar.png">
+            <span>•</span>
+        </button>
+        <div>
+            <button>
+                <img id="ActivarSonido" alt="Silenciar" src="img/sonidoactivo.png">
+                <img id="DesactivarSonido" alt="Silenciar" src="img/silenciar.png">
+                <span>•</span>                
+            </button>
+            <input
+            type="range"
+            name="volumen"
+            id="volumen"
+            min="0"
+            max="100"
+            step="1"
+            value="0:01" />
+        </div>
+        <button id="AbrirMini">
+            <img alt="AbrirMini" src="img/reproductor.png">
+            <span>•</span>
+        </button>
+        <button id="FullScreen">
+            <img alt="FullScreen" src="img/expandir.png">
+            <span>•</span>
+        </button>
+    </section>
+</footer>
+</body>
+</html>

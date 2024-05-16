@@ -1,0 +1,951 @@
+@media (max-width:1200px){
+footer{justify-content: center;}
+}
+@media (min-width:1200px){
+footer{justify-content: space-between;}
+}
+@media (max-width:768px){
+    #Centro article.top {
+        padding: 15px;
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+    #Der, #Izq, #Centro {
+        width:100%;
+    }
+    #Der .principal .top{
+        position: relative;
+        width: 100%;
+    }
+}
+@media (min-width:768px){
+    #Centro article.top {
+        padding: 15px;
+        position: fixed;
+        right: 25%;
+        left: 24%;
+    }
+    #Der .principal .top{
+        position: fixed;
+        width: 19.4%;
+    }
+    #Der, #Izq{
+        width:22%;
+    }
+    #Centro {
+        width: 54%;}
+}
+
+#VistaExtra div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#VistaExtra button {
+    color: var(--verde);
+    font-size: 25px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border:none;
+}
+
+#VistaExtra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#Reproductor #barra #music{
+    width: 80%;
+}
+#Reproductor #barra #music::-webkit-slider-thumb {
+    opacity: 0;
+}
+
+#Reproductor #barra {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#Reproductor output {
+    font-size: 12px;
+}
+#Reproductor .botones #repetir span {
+    font-size: 20px;
+}
+#Reproductor .botones #repetir p {
+    width: fit-content;
+    background: var(--negro);
+    position: relative;
+    top: 10px;
+    z-index: 1;
+    font-size: 11px;
+    padding: 0px 2px;
+}
+#Reproductor .botones #repetir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#Reproductor .botones #parar img, #Reproductor .botones #reproducir img {
+    filter: invert(0);
+}
+#Reproductor .botones #parar, #Reproductor .botones #reproducir {
+    background: white;
+    height: 35px;
+    border-radius: 20px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Reproductor .botones button img {
+    width: 18px;
+}
+#Reproductor .botones button {
+    background: transparent;
+    border: none;
+    color: var(--verde);
+    font-weight: 700;
+}
+#Reproductor .botones {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+#Reproductor article {
+    background: transparent;
+}
+#Reproductor {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer .SongArtista .Plus {
+    font-size: 16px;
+    color: var(--gristexto);
+    border-radius: 10px;
+    border: 2px solid;
+    height: 14px;
+    width: 14px;
+    text-align: center;
+}
+footer .SongArtista span {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer .SongArtista img{
+    filter:brightness(1);
+    width: 52px;
+    border-radius: 6px;}
+footer .SongArtista {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: white;
+}
+#PopInfo, #Der .InfArtista button, #Der .InfArtista .oyentes, #Der .InfArtista p {
+    font-size: 15px;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+#Der .InfArtista {
+    padding: 0px;
+}
+#Der .InfArtista, #Der .creditos, #Der .gira, #Der .continuacion {
+    background: var(--negromedio);
+}
+#Der .continuacion .SongNext img {
+    filter: none;
+    height: 50px;
+    width: fit-content;
+    border-radius: 8px;
+}
+#Der .continuacion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#Der .continuacion .SongNext span {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+#Der .continuacion .SongNext span img {
+    filter: invert(1);
+    width: 15px;
+    height: max-content;
+    position: relative;
+}
+#Der .continuacion .SongNext {
+    display: flex;
+    justify-content: space-between;
+}
+#Der .gira .presentacion .horario {
+    flex-direction: column;
+    gap: 3px;
+}
+#Der .gira .presentacion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#Der .gira .fecha h3 {
+    font-size: 25px;
+}
+#Der .gira .fecha {
+    flex-direction: column;
+    width: min-content;
+    background: var(--negrosection);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    gap: 5px;
+    color:white;
+}
+#Der .principal img.Album {
+    padding-top: 25px;
+}
+#Der .ArtPrin.DejarSeguir {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#Der .creditos .ArtPrin h3, #Der .gira .ArtPrin h3, #Der .continuacion .ArtPrin h3 {
+    font-size: 16px;
+    color: white;
+    line-height: 2em;
+}
+
+#Der .creditos span h3, #Der .gira span h3, #Der .continuacion span h3{
+    font-size: 17px;
+    color: white;
+    font-size: 15px;
+}
+#Der .creditos span, #Der .gira span, #Der .continuacion span {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;;
+}
+#PopInfo a {
+    color: white;
+}
+#PopInfo {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#Der .InfArtista button, #Der .ArtPrin.DejarSeguir button {
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--gris);
+    margin: 15px 0px;
+}
+#Der .InfArtista .oyentes {
+    font-size: 15px;
+}
+#Der  .InfArtista p {
+    line-height: 2.3em;
+    font-size: 15px;
+    color: white;
+}
+#Der .InfArtista img {
+    filter: none;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+#Der, #Izq, #Centro {
+    height: 27em;
+}
+#Der {
+    overflow-y: auto;
+    background: var(--negrosection);
+    border-radius: 8px;
+}
+#Der .principal .top {
+
+    background: var(--negrosection);
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    top: 10px;
+    margin-left: -14px;
+    border-radius: 8px 8px 0px 0px;
+    padding: 15px;
+    filter: drop-shadow(1px 4px 8px black);
+}
+#MeGusta {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: var(--gristexto);
+    background: transparent;
+    border: 2px solid;
+    padding: 3px;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 15px;
+}
+.ArtistaSidebar {
+    position: relative;
+}
+#Der .ArtistaSidebar a {
+    font-size: 15px;
+}
+#Der .principal h2 {
+    font-size: 22px;
+    color: white;
+    margin-top: 20px;
+}
+#Der .principal img {
+    margin-top: 25px;
+    filter: none;
+    width: 100%;
+    border-radius: 10px;
+}
+#Der #MasOpciones {
+    font-size: 25px;
+    color: var(--gristexto);
+    background: transparent;
+    border-style: none;
+    margin-bottom: 8px;
+}
+#Der #close {
+    font-size: 25px;
+    color: var(--gristexto);
+    background: transparent;
+    border-radius: 50px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+}
+
+#Der .principal {
+    position: relative;
+    margin-left: 0px;
+}
+#Der article {
+    padding: 15px;
+    margin-left: 15px;
+    position: relative;
+}
+#Der h1 {
+    color: white;
+    font-size: 15px;
+}
+#Centro article.top {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+#Centro .top {
+
+}
+#MixArtistas {
+    margin-top: 50px;
+}
+.MenuFoot .bottom a, .MenuFoot .bottom p {
+    color: var(--gristexto);
+    font-size: 13px;
+}
+.MenuFoot .bottom .Politicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.MenuFoot .bottom {
+    width: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 15px;
+}
+#Centro .MenuFoot hr {
+    border-bottom: 1px solid var(--negroboton);
+    width: 95%;
+}
+#Centro .MenuFoot {
+    flex-direction: column;
+}
+.SocialMedia a:hover {
+    background: #414141;
+}
+.SocialMedia a {
+    padding: 10px;
+    background: var(--negroboton);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.SocialMedia {
+    display: flex;
+    gap: 15px;
+}
+.SocialMedia img {
+    filter: invert(1);
+    width: 18px;
+}
+.Menu a {
+    color: var(--gristexto);
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.Menu strong a {
+    color: white;
+    font-size: 16px;
+}
+ul {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    color: white;
+}
+.ImgMix.PlayGustar {
+    background: rgb(80, 24, 240);
+    background: linear-gradient(135deg, rgba(80, 24, 240, 1) 0%, rgba(196, 196, 196, 1) 100%);
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.Recomendaciones .ImgMix .gustar{
+    width: 80px;
+    height: auto;
+    filter: invert(1);
+}
+.TxtMix span a {
+    color: var(--gristexto);
+    font-size: 12px;
+    line-height: 1em;
+}
+.TxtMix p {
+    font-size: 14px;
+    color: white;
+    margin: 8px 0px;
+    height: 30px;
+}
+.mixes {
+    width: 160px;
+    height: 275px;
+}
+.ImgMix button {
+    position: absolute;
+    right: 15px;
+    top: 110px;
+}
+#MixArtistas button {
+    position: absolute;
+}
+.ImgMix p {
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    font-weight: 900;
+    border-bottom: var(--amarillo) 5px solid;
+}
+.ImgMix {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    width: fit-content;
+    position: relative;
+}
+.Recomendaciones .ImgMix img {
+    height: 160px;
+    width: 160px;
+    border-radius: 8px;
+    filter: brightness(0.8);
+    object-fit: cover;
+}
+.Recomendaciones .Titulo p {
+    font-size: 14px;
+}
+.Recomendaciones .Titulo h2 {
+    color: white;
+    font-size: 25px;
+}
+.Recomendaciones .Titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Recomendaciones {
+    flex-wrap: wrap;
+    padding: 15px;
+}
+#MixArtistas span {
+    display: flex !important;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+}
+#MixArtistas button, .ImgMix button {
+    background: var(--verde);
+    border: 0px;
+    padding: 6px;
+    border-radius: 50%;
+    filter: drop-shadow(2px 4px 6px black);
+}
+#MixArtistas span img, .ImgMix button img {
+    width: 20px!important;
+    height: auto!important;
+    filter: invert(1)!important;
+}
+#MixArtistas div img {
+    filter: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+#MixArtistas div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    background: var(--negromedio);
+    font-size: 12px;
+    border-radius: 5px;
+    width: 49%;
+    position: relative;
+}
+#MixArtistas {
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+}
+.Perfil img {
+    filter: none;
+    border-radius: 50%;
+    width: 22px;
+}
+.Campana, .Perfil {
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    background: var(--negro);
+    border: 0px;
+}
+.InsApp img {
+    filter: invert(1);
+    width: 18px;
+}
+.InsApp {
+    background: var(--negro);
+    color: white;
+}
+.Descubrir, .InsApp {
+    height: 33px;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 15px;
+    border-radius: 50px;font-weight: 600;
+}
+#Centro article {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.BtnIzqHeader, .BtnDerHeader {
+    background: var(--negromedio);
+    border: 0px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    color: var(--gristexto);
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+#Artistas li p.active {
+    color: var(--verde);
+}
+#BocinaArtista {
+    filter: invert(1) !important;
+    width: 25px !important;
+    margin-right: 10px;
+}
+#Artistas .Artista img {
+    width: 48px;
+    border-radius: 50%;
+}
+#Artistas .Lista img {
+    width: 48px;
+    border-radius: 6px;
+}
+#Artistas img{
+    filter: none;
+}
+#MixArtistas .gustan div img{
+    width: 25px;
+    height: auto;
+    filter: invert(1);
+}
+#MixArtistas .gustan div, #Artistas li .gustan{
+    background: rgb(80,24,240);
+    background: linear-gradient(135deg, rgba(80,24,240,1) 0%, rgba(196,196,196,1) 100%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+#Artistas .guardados {
+    background: rgb(3,150,126);
+    background: linear-gradient(135deg, rgba(3,150,126,1) 0%, rgba(0,96,80,1) 100%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.CancionesGustan .gustan img {
+    filter: invert(1)!important;
+    width: 18px;
+}
+#Artistas .guardados img {
+    filter: invert(1);
+}
+#Artistas li div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#Artistas li span img {
+    width: 15px;
+    filter: invert(1);
+}
+#Artistas li span {
+    font-size: 13px;
+}
+#Artistas li p {
+    color: white;
+    font-size: 14px;
+}
+#Artistas li:hover {
+    background: var(--negromedio);
+}
+#Artistas li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+#Artistas {
+    list-style: none;
+    padding: 0px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#FiltroArtistas {
+    overflow-y: auto;
+    height: 73%;
+    margin-right: -15px;
+}
+#TuBiblio {
+    padding: 16px 15px;
+    height: 71.5%;
+}
+#FiltroArtistas #Filtro {
+    display: flex;
+    justify-content: space-between;
+}
+#Filtro a:hover {
+    filter: brightness(1.5);
+    transform: scale(1.03);
+}
+#Filtro a {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--gristexto);
+}
+#Filtro #search img {
+    width: 23px;
+}
+#Filtro #search {
+    background: transparent;
+    border: 0px;
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+}
+#Filtro #search:hover {
+    filter: brightness(1.5);
+    background-color: hsl(0deg 0% 100% / 10%);
+}
+#BtnCategorias img, #BtnCategorias img {
+    width: 13px;
+}
+#Categorias .BGTransparente:hover{
+    background-color: hsl(0deg 0% 100% / 10%);
+}
+#BtnCategorias .BtnIzq:hover, #BtnCategorias .BtnDer:hover{
+    filter: contrast(0.7);
+}
+#BtnCategorias .BtnIzq {
+    left: 12%;
+}
+#BtnCategorias .BtnDer {
+    right: 0;
+}
+#BtnCategorias .BtnIzq, #BtnCategorias .BtnDer {
+    position: absolute;
+    top: 0;
+    background: var(--negromedio);
+    border: 0px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+}
+#Categorias {
+    position: relative;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+#Categorias .btns {
+    display: flex;
+    gap: 8px;
+    width: 292px;
+}
+#Categorias .BGTransparente {
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 50px;
+}
+#Der, #Izq, #Centro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#Home a:hover, #Biblio a:hover{
+    filter: brightness(1.5);
+}
+
+#Biblio a {
+    gap: 10px;
+}
+#Biblio div{
+    display:flex;
+    gap:6px;
+}
+#Biblio div a:hover {
+    background: #1e1e1eba;
+    border-radius:50%;
+}
+#Biblio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#Biblio div a img {
+    width: 15px;
+    padding: 8px;
+    border-radius: 50%;
+}
+#Home a {
+    gap: 18px;
+}
+#Home a, #Biblio a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+#Home img, #Biblio a img {
+    width: 26px;
+}
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+#Centro {
+    background: var(--negrosection);
+    border-radius: 8px;
+    position: relative;
+    overflow-y: auto;
+}
+
+article {
+    border-radius: 8px;
+    background: var(--negrosection);
+}
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+button{cursor: pointer;}
+
+a:hover{
+    transition: 0.5s;
+}
+
+img{
+    filter:invert(0.7);width:20px;
+}
+
+span, p, h1, h2, h3, h4, h5, h6, div, article, section, button {
+    line-height: 1em;
+    margin:0px;
+    padding:0px;
+}
+
+
+body {
+    font-family: 'Gotham', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;gap: 10px;margin:0px;padding:10px;
+}
+
+footer{width: 100%;
+    display: flex;
+    background: var(--negro);
+    height: 3.5em;
+    flex-wrap: wrap;
+}
+
+/*Font Family*/
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('font/Gotham-Medium.otf') format('opentype');
+}
+
+/*Colores*/
+
+.CVerde{color: var(--verde)}
+.BGVerde{background-color: var(--verde)}
+.BCVerde{border-color: var(--verde)}
+
+.CBlanco{color: var(--blanco)}
+.BGBlanco{background-color: var(--blanco)}
+.BCBlanco{border-color: var(--blanco)}
+
+.CAmarillo{color: var(--amarillo)}
+.BGAmarillo{background-color: var(--amarillo)}
+.BCAmarillo{border-color: var(--amarillo)}
+
+.CRojo{color: var(--rojo)}
+.BGRojo{background-color: var(--rojo)}
+.BCRojo{border-color: var(--rojo)}
+
+.CNegro{color: var(--negro)}
+.BGNegro{background-color: var(--negro)}
+.BCNegro{border-color: var(--negro)}
+
+.CNegrosection{color: var(--negrosection)}
+.BGNegrosection{background-color: var(--negrosection)}
+.BCNegrosection{border-color: var(--negrosection)}
+
+.CNegromedio{color: var(--negromedio)}
+.BGNegromedio{background-color: var(--negromedio)}
+.BCNegromedio{border-color: var(--negromedio)}
+
+.CNegroboton{color: var(--negroboton)}
+.BGNegroboton{background-color: var(--negroboton)}
+.BCNegroboton{border-color: var(--negroboton)}
+
+.CGris{color: var(--gris)}
+.BGGris{background-color: var(--gris)}
+.BCGris{border-color: var(--gris)}
+
+.CGristexto{color: var(--gristexto)}
+.BGGristexto{background-color: var(--gristexto)}
+.BCGristexto{border-color: var(--gristexto)}
+
+.CTransparente{color: var(--transparente)}
+.BGTransparente{background-color: var(--transparente)}
+.BCTransparente{border-color: var(--transparente)}
+
+
+:root{
+--range-value: 1%;
+--verde:#1ed760;
+--blanco:#fff;
+--amarillo:#ffa42b;
+--rojo:#e91429;
+--negro:#000;
+--negrosection:#121212;
+--negromedio:#1a1a1a;
+--gris:#a7a7a7;
+--gristexto:#b3b3b3;
+--negroboton:#242424;
+--transparente:hsla(0,0%,100%,.07);
+}
+
+
+#FiltroArtistas::-webkit-scrollbar-track, *::-webkit-scrollbar-track, #Centro::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+#FiltroArtistas::-webkit-scrollbar-thumb:hover, *::-webkit-scrollbar-thumb:hover, #Centro::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gris);
+}
+
+#FiltroArtistas::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb, #Centro::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 3px solid transparent;
+  }
+#FiltroArtistas::-webkit-scrollbar, body::-webkit-scrollbar, *::-webkit-scrollbar, #Centro::-webkit-scrollbar {
+  width: 12px;     
+  height: 9px;          
+}
+
+
+
